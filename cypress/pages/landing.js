@@ -39,7 +39,7 @@ class HomePage{
       });
     }
 
-    //delete
+    //delete row data
     deletebookingdata(){
         cy.get(objectelements.delete).each(($el, index, $list) => {
             cy.get($el).click({ multiple: true });
