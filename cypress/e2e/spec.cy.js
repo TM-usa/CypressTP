@@ -1,5 +1,5 @@
 import LandingPage  from "../pages/landing";
-import "cypress-mochawesome-reporter/register";
+//import "cypress-mochawesome-reporter/register";
 
 
 describe('hotel booking form testing', () => {

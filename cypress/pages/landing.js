@@ -1,13 +1,13 @@
 import { elements } from "../Object/objectelements";
 
 class HomePage{
-    site(){
+    visit(){
         cy.visit(elements.link);
     }
 
     //fill in the booking form
 
-    book(){
+    fill_form(){
     cy.get(objectelements.first_name).type("Thapelo");
     cy.get(objectelements.last_name).type("Nghayo");
     cy.get(objectelements.tot_price).type("5264");
