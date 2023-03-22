@@ -1,4 +1,4 @@
-import { elements } from "../Object/objectelements";
+import { objectelements } from "../Object/objectelements";
 
 class HomePage{
     visit(){
@@ -18,8 +18,8 @@ class HomePage{
     .invoke("val")
     .should("eq", "true");
 
-    cy.get(objectelements.check_in).type("2023-03-28");
-    cy.get(objectelements.check_out).type("2023-04-30");
+    cy.get(objectelements.checkIn).type("2023-03-28");
+    cy.get(objectelements.checkOut).type("2023-04-30");
     cy.get(objectelements.save_button).click();
 
     cy.wait(4000);
