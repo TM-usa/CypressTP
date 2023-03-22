@@ -2,7 +2,7 @@ import { elements } from "../Object/objectelements";
 
 class HomePage{
     visit(){
-        cy.visit(elements.link);
+        cy.visit(objectelements.link);
     }
 
     //fill in the booking form
