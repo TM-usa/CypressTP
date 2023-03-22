@@ -16,12 +16,12 @@ describe('hotel booking form testing', () => {
   it('Assertions', () => {
     page.visit();
     cy.wait(6000);//wait to load the data
-    page.verify_data();
+    page.verifybookingdata();
   })
 
-  it('Deleting row', () => {
+  it('Deleting data', () => {
     page.visit();
     cy.wait(6000); //wait to load the data
-    page.delete_row()
+    page.deletebookingdata()
   })
 })
